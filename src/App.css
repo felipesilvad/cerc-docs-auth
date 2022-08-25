@@ -1,38 +1,79 @@
+@font-face {
+  font-family: Cerebri Sans Book;
+  src: url(./font/Cerebri_Sans_Book.ttf);
+}
+
+@font-face {
+  font-family: Cerebri Sans SemiBold;
+  src: url(./font/Cerebri_Sans_SemiBold.ttf);
+}
+
+h2 {
+  font-family: Cerebri Sans SemiBold;
+  line-height: 1.4!important;
+}
+
+h6 {
+  font-size: 0.9rem!important;
+  line-height: 2!important;
+}
+
 .App {
-  text-align: center;
+  background-image: url('./imgs/BACKGROUND.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height:100%;
+  height:100vh;
+  width:100%;
+  position:absolute;
+  font-family: Cerebri Sans Book;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  border-radius: 1.5rem!important;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding-left: 4rem!important;
+  padding-top: 1.5rem!important;
+  padding-right: 4rem!important;
+  padding-bottom: 2.5rem!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  width: 15rem;
+  margin-bottom: 1rem;  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.woman-img {
+  width: fit-content;
+  width: 16rem;
+  margin-left: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.button{
+  background-color: #2CA28D!important;
+  width: 100%;
+  border: none!important;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.8rem!important;
+  font-size: 0.9rem!important;
+  padding: 0.6rem 2.2rem!important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-saber-mais{
+  background-color: #FFFFFF!important;
+  color: #1465BD!important;
+  padding: 0.6rem 2.2rem!important;
+  font-size: 0.9rem!important;
+  font-weight: 600!important;
+  border: none!important;
+  margin-top: 1.5rem;
+  border-radius: 0.8rem!important;
+}
+
+.blue-higlight {
+  color: #0C65A3!important;
 }
