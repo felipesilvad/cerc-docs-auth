@@ -3,7 +3,7 @@ import { Card, Button, Container, } from 'react-bootstrap';
 
 const Produto = () => {
   return (
-    <Container>
+    <Container class="produto">
       <header className='produto-head'>
 
       </header>
