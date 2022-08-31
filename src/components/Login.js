@@ -1,5 +1,6 @@
 import React from 'react'
 import { Form, Button } from 'react-bootstrap';
+import {Link} from "react-router-dom";
 
 const Login = () => {
   return (
@@ -12,13 +13,15 @@ const Login = () => {
         <Form.Label className="text-muted">Senha</Form.Label>
         <Form.Control type="password" placeholder="digite a senha" />
       </Form.Group>
-      <Button href='https://cerc-docs.gitbook.io/cerc-docs-sacador/ZYMORO4tSIVO0yh1ZwAQ/'className='button' variant="primary" type="submit">
-        Entrar
-      </Button>
+      <Link to="/produto">
+        <Button className='button' variant="primary" type="submit">
+          Entrar
+        </Button>
+      </Link>
       <Form.Text className="text-muted">
         Mais informações, entre em contato com: <b className='blue-higlight'>info@cerc.inf.br</b>
       </Form.Text>
-    </Form>
+    </Form>    
   )
 }
 

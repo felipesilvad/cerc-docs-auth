@@ -63,6 +63,26 @@ h6 {
   padding: 0.6rem 2.2rem!important;
 }
 
+.button-2{
+  background-color: #2CA28D!important;
+  border: none!important;
+  border-radius: 0.8rem!important;
+  font-size: 0.9rem!important;
+  padding: 0.6rem 2rem!important;
+  width: 100%;
+}
+
+.button-3{
+  color: #2CA28D!important;
+  border: 1px solid #2CA28D!important;
+  background-color: rgba(0, 0, 0, 0)!important;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.8rem!important;
+  font-size: 0.9rem!important;
+  padding: 0.6rem 2.2rem!important;
+}
+
 .button-saber-mais{
   background-color: #FFFFFF!important;
   color: #1465BD!important;
@@ -76,4 +96,59 @@ h6 {
 
 .blue-higlight {
   color: #0C65A3!important;
+}
+
+.produto-txt {
+  color: #465F72;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.produto-card {
+  border: none;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.25);
+  padding: 1rem!important;
+  margin: 1rem!important;
+}
+
+.card-title {
+  color: #474747;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: -1rem;
+}
+
+.card-ul {
+  color: #94A2B7;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.produto-head {
+  height: 6rem;
+}
+
+.produto-sub-txt {
+  color: #465F72;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.produto-txt {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: black;
+}
+
+.card-container{
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container{
+    display: block;
+  }
 }
