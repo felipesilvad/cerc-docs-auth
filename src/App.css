@@ -41,10 +41,18 @@ h6 {
   padding-bottom: 2.5rem!important;
 }
 
+.logo-head{
+  width: 12rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem!important;
+  margin-top: 0.5rem!important;
+}
+
 .logo{
   width: 15rem;
   margin-bottom: 1rem;  
 }
+
 
 .woman-img {
   width: fit-content;
@@ -114,27 +122,34 @@ h6 {
 .card-title {
   color: #474747;
   font-size: 1.4rem;
-  text-align: center;
+  /* text-align: center; */
   font-weight: 700;
   line-height: 1.5;
   margin-top: -1rem;
+}
+
+.produto-icon{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1.5rem;
 }
 
 .card-ul {
   color: #94A2B7;
   font-size: 1rem;
   padding: 1rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .produto-head {
   height: 6rem;
+  /* border-bottom: gray solid 0.1rem; */
 }
 
 .produto-sub-txt {
   color: #465F72;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 1.5rem;
 }
 
@@ -155,5 +170,5 @@ h6 {
 }
 
 .produto {
-  font-family: Cerebri Sans SemiBold;
+  font-family: Cerebri Sans Book!important;
 }
