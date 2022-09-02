@@ -15,7 +15,7 @@ const Produto = () => {
         <div className='text-center p-4'>
           <h3 className='produto-txt'>Escolha um produto abaixo para acessar o cerc.docs:</h3>
           <div className='d-flex justify-content-center mt-2 pt-2'>
-            <p className='w-50 produto-sub-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor vel purus a scelerisque.</p>
+            <p className='produto-sub-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor vel purus a scelerisque.</p>
           </div>
         </div>
 

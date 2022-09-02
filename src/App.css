@@ -150,7 +150,8 @@ h6 {
   color: #465F72;
   font-size: 1.2rem;
   font-weight: 400;
-  margin-top: 1.5rem;
+  margin-top: 0rem;
+  width: 50%!important;
 }
 
 .produto-txt {
@@ -163,9 +164,97 @@ h6 {
   display: flex;
 }
 
-@media only screen and (max-width: 768px) {
+.saiba-mais-div{
+  padding: 1.2rem!important;
+  margin: 1.2rem!important;
+}
+
+.saiba-mais-txt{
+  margin-top: 1.2rem!important;
+}
+
+.mt-4-none-xs{
+  margin-top: 1.5rem;
+}
+
+.esqueci-senha{
+  text-align: right;
+  font-size: 0.8rem!important;
+  font-weight: 600;
+  margin-top: -0.6rem;
+  margin-bottom: 1rem;
+  font-family: Cerebri Sans Book!important;
+}
+
+@media only screen and (max-height: 740px) {
+  .App{
+    height: 125%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
   .card-container{
     display: block;
+  }
+  .produto-sub-txt {
+    width: 80%!important;
+  }
+  .logo-head{
+    width: 12rem;
+    margin-bottom: 0.0rem!important;
+    margin-left: 0rem!important;
+    margin-top: 0.5rem!important;
+  }
+  .card {
+    border-radius: 1.5rem!important;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    padding-left: 2rem!important;
+    padding-top: 1rem!important;
+    padding-right: 2rem!important;
+    padding-bottom: 1.5rem!important;
+  }
+  .woman-img {
+    display: none;
+  }
+  .saiba-mais-div{
+    padding: 0rem!important;
+    margin: 0rem!important;
+  }
+  .App {
+    background-image: url('./imgs/background_gradient_mobile.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position:absolute;
+    font-family: Cerebri Sans Book;
+}
+  .saiba-mais-txt{
+    margin: 2rem 2rem;
+  }
+  .button-saber-mais{
+    margin-top: 0rem;
+    text-align: center;
+    font-size: 1rem!important;
+  }
+  .text-center-mobile {
+    text-align: center;
+    color: white;
+  }
+  .button{
+    background-color: #2CA28D!important;
+    width: 100%;
+    border: none!important;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border-radius: 0.8rem!important;
+    font-size: 0.9rem!important;
+    padding: 0.6rem 2.2rem!important;
+  }
+
+  .mt-4-none-xs{
+    margin-top: 0.3rem;
   }
 }
 
