@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, Button, Container,Image } from 'react-bootstrap';
 import logo from '../imgs/LOGO_CERC.DOCS.png';
-import arranjo_de_pagamento from '../imgs/arranjo_de_pagamento.png';
+import arranjo_de_pagamento from '../imgs/credit-card.png';
 import imobiliario from '../imgs/imobiliario.png';
 import duplicata_escritural from '../imgs/duplicata_escritural.png';
 
