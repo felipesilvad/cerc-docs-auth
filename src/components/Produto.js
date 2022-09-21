@@ -34,7 +34,9 @@ const Produto = () => {
                 <li>Vestibulum at eros</li>
               </ul>
               <div className=' text-center'>
-                <Button href="https://cerc-2.gitbook.io/cerc-docs-sacador/ZYMORO4tSIVO0yh1ZwAQ/" className='button-2'>Acessar</Button>
+                <Button 
+                href="https://cerc-2.gitbook.io/cerc-docs-sacador/ZYMORO4tSIVO0yh1ZwAQ/" 
+                className='button-2'>Acessar</Button>
               </div>
             </Card.Body>
           </Card>
