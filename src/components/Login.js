@@ -1,26 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Form, Button } from 'react-bootstrap';
-import {Link} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"
 
 const Login = () => {
+  const [email, setEmail] = useState()
+  const [password, setPassword] = useState()
+  const navigate = useNavigate()
+  const axios = require('axios');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try{
+      axios.post('https://stgpublica.cerc.inf.br/app/portal/api/auth/users/companies', {
+        'CPF': '1029381203',
+      },{headers: {
+        'authorization': `Basic MDE3MzAyMzcyMDc=:M2RjNDIyNjMtZjZjYy00ODM1LTg1YzEtYzJkYjUwNDhhOWFj`,
+        'Access-Control-Allow-Origin': '*',
+      }})
+      .then(function (response) {
+        console.log(response);
+      })
+      console.log('2')
+    }catch (e) {
+      console.log(e.message)
+    }
+  }
+
   return (
-    <Form className='mt-4-none-xs'>
+    <Form className='mt-4-none-xs' onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label className="text-muted">Login</Form.Label>
-        <Form.Control type="email" placeholder="e-mail ou CPF" />
+        <Form.Control onChange={(e) => setEmail(e.target.value)} type="email" placeholder="e-mail ou CPF" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label className="text-muted">Senha</Form.Label>
-        <Form.Control type="password" placeholder="digite a senha" />
+        <Form.Control onChange={(e) => setPassword(e.target.value)} type="password" placeholder="digite a senha" />
       </Form.Group>
       <div className='d-lg-none d-xl-none'>
         <h6 className='esqueci-senha blue-higlight'>Esqueci minha senha</h6>
       </div>
-      <Link to="/produto">
+      {/* <Link to="/produto"> */}
         <Button className='button' variant="primary" type="submit">
           Entrar
         </Button>
-      </Link>
+      {/* </Link> */}
       <Form.Text className="text-muted d-none d-lg-block">
         Mais informações, entre em contato com: <b className='blue-higlight'>info@cerc.inf.br</b>
       </Form.Text>
