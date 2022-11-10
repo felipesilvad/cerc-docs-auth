@@ -44,8 +44,11 @@ const Login = () => {
           Entrar
         </Button>
       {/* </Link> */}
-      <Form.Text className="text-muted d-none d-lg-block">
-        Mais informações, entre em contato com: <b className='blue-higlight'>info@cerc.inf.br</b>
+      <div className='d-none d-lg-block'>
+        <h6 className='esqueci-senha blue-higlight text-center'>Esqueci minha senha</h6>
+      </div>
+      <Form.Text className="text-muted text-center d-none d-lg-block">
+        Ainda não é cilente ou precisa de mais informações? Nos contate em <b className='blue-higlight'>info@cerc.inf.br</b>
       </Form.Text>
     </Form>    
   )
