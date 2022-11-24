@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Form, Button } from 'react-bootstrap';
+import Spinner from 'react-bootstrap/Spinner';
 import { Link, useNavigate } from "react-router-dom"
 import { Buffer } from 'buffer';
 
@@ -11,6 +12,11 @@ const Login = () => {
   const [token, setToken] = useState()
   const axios = require('axios');
   const basic = require('basic-authorization-header');
+  const [loading, setLoading] = useState()
+
+  const fetchData = () =>{
+    setLoading(true)
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -33,6 +39,7 @@ const Login = () => {
           .then(function (result) {
             console.log(result.request.response);
             setToken(result.request.response)
+            setLoading(false)
             window.open("https://cerc-2.gitbook.io/cerc-docs-sacador/ZYMORO4tSIVO0yh1ZwAQ/");
         })
       })
@@ -54,7 +61,8 @@ const Login = () => {
       <div className='d-lg-none d-xl-none'>
         <h6 className='esqueci-senha blue-higlight'>Esqueci minha senha</h6>
       </div>
-      <Button className='button' variant="primary" type="submit">
+      <Button className='button' onClick={fetchData} variant="primary" type="submit">
+        {loading && <Spinner animation="border" disabled={loading} role="status"><span className="visually-hidden">Loading...</span></Spinner>}
         Entrar
       </Button>
       <div className='d-none d-lg-block'>
