@@ -14,6 +14,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    console.log('updated')
     try{
       axios.post('https://cad-stg.cerc.inf.br/v1/auth/users/companies', {"accessCode":null},{
         headers: {
